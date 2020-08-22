@@ -26,7 +26,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               'Fashion Market',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 25,
+                fontSize: 40,
+                fontFamily: "Signatra",
               ),
             ),
             Row(
@@ -38,6 +39,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     Icons.notifications,
                     color: Colors.white,
                   ),
+                  onPressed: () {},
                 ),
                 IconButton(
                   iconSize: 30,
@@ -45,6 +47,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     Icons.search,
                     color: Colors.white,
                   ),
+                  onPressed: () {},
                 )
               ],
             ),
@@ -57,16 +60,97 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           Container(
             height: double.infinity,
             width: double.infinity,
-            child: Stack(
-              fit: StackFit.passthrough,
-              children: [
-                Container(
-                  margin: EdgeInsets.only(top: 100),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [],
-                  ),
+            child: ListView(
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: SizedBox(
+                        height: 200,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(color: Colors.grey, width: 1),
+                          ),
+                          child: Image.asset('assets/images/balenspeed.jpg',
+                              fit: BoxFit.contain),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: SizedBox(
+                        height: 200,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(color: Colors.grey, width: 1),
+                          ),
+                          child: Image.asset('assets/images/balenspeed.jpg',
+                              fit: BoxFit.contain),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: SizedBox(
+                        height: 200,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(color: Colors.grey, width: 1),
+                          ),
+                          child: Image.asset('assets/images/guccirhyton.jpg',
+                              fit: BoxFit.contain),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: SizedBox(
+                        height: 200,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(color: Colors.grey, width: 1),
+                          ),
+                          child: Image.asset('assets/images/guccirhyton.jpg',
+                              fit: BoxFit.contain),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: SizedBox(
+                        height: 200,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(color: Colors.grey, width: 1),
+                          ),
+                          child: Image.asset('assets/images/slpsl06.jpg',
+                              fit: BoxFit.contain),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: SizedBox(
+                        height: 200,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(color: Colors.grey, width: 1),
+                          ),
+                          child: Image.asset('assets/images/slpsl06.jpg',
+                              fit: BoxFit.contain),
+                        ),
+                      ),
+                    ),
+                  ],
                 )
               ],
             ),
