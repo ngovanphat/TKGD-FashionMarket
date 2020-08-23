@@ -66,27 +66,121 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   children: <Widget>[
                     Expanded(
                       child: SizedBox(
-                        height: 200,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            side: BorderSide(color: Colors.grey, width: 1),
-                          ),
-                          child: Image.asset('assets/images/balenspeed.jpg',
-                              fit: BoxFit.contain),
+                        height: 300,
+                        child: Column(
+                          children: <Widget>[
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                side: BorderSide(color: Colors.white, width: 2),
+                              ),
+                              child: Image.asset('assets/images/1sdior.jpg',
+                                  fit: BoxFit.contain),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Text(
+                                      "Jordan 1 Dior",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Text(
+                                        "\$8,000",
+                                        style: TextStyle(
+                                            fontSize: 23,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: <Widget>[
+                                          Icon(Icons.location_on,
+                                              size: 16, color: Colors.black38),
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 8.0),
+                                            child: Text(
+                                              "Ho Chi Minh City",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.black38),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
                     Expanded(
                       child: SizedBox(
-                        height: 200,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            side: BorderSide(color: Colors.grey, width: 1),
-                          ),
-                          child: Image.asset('assets/images/balenspeed.jpg',
-                              fit: BoxFit.contain),
+                        height: 300,
+                        child: Column(
+                          children: <Widget>[
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                side: BorderSide(color: Colors.white, width: 2),
+                              ),
+                              child: Image.asset('assets/images/balenspeed.jpg',
+                                  fit: BoxFit.contain),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Text(
+                                      "Balenciaga Speed",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Text(
+                                        "\$500",
+                                        style: TextStyle(
+                                            fontSize: 23,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.start,
+                                        children: <Widget>[
+                                          Icon(Icons.location_on,
+                                              size: 16, color: Colors.black38),
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 8.0),
+                                            child: Text(
+                                              "Ho Chi Minh City",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.black38),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
@@ -96,27 +190,121 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   children: <Widget>[
                     Expanded(
                       child: SizedBox(
-                        height: 200,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            side: BorderSide(color: Colors.grey, width: 1),
-                          ),
-                          child: Image.asset('assets/images/guccirhyton.jpg',
-                              fit: BoxFit.contain),
+                        height: 300,
+                        child: Column(
+                          children: <Widget>[
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                side: BorderSide(color: Colors.white, width: 2),
+                              ),
+                              child: Image.asset('assets/images/guccirhyton.jpg',
+                                  fit: BoxFit.contain),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Text(
+                                      "Gucci Rhyton",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Text(
+                                        "\$1,000",
+                                        style: TextStyle(
+                                            fontSize: 23,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.start,
+                                        children: <Widget>[
+                                          Icon(Icons.location_on,
+                                              size: 16, color: Colors.black38),
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 8.0),
+                                            child: Text(
+                                              "Ho Chi Minh City",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.black38),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
                     Expanded(
                       child: SizedBox(
-                        height: 200,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            side: BorderSide(color: Colors.grey, width: 1),
-                          ),
-                          child: Image.asset('assets/images/guccirhyton.jpg',
-                              fit: BoxFit.contain),
+                        height: 300,
+                        child: Column(
+                          children: <Widget>[
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                side: BorderSide(color: Colors.white, width: 2),
+                              ),
+                              child: Image.asset('assets/images/gvc.jpg',
+                                  fit: BoxFit.contain),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Text(
+                                      "Givenchy Distressed",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Text(
+                                        "\$450",
+                                        style: TextStyle(
+                                            fontSize: 23,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.start,
+                                        children: <Widget>[
+                                          Icon(Icons.location_on,
+                                              size: 16, color: Colors.black38),
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 8.0),
+                                            child: Text(
+                                              "Ho Chi Minh City",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.black38),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
@@ -126,31 +314,252 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   children: <Widget>[
                     Expanded(
                       child: SizedBox(
-                        height: 200,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            side: BorderSide(color: Colors.grey, width: 1),
-                          ),
-                          child: Image.asset('assets/images/slpsl06.jpg',
-                              fit: BoxFit.contain),
+                        height: 300,
+                        child: Column(
+                          children: <Widget>[
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                side: BorderSide(color: Colors.white, width: 2),
+                              ),
+                              child: Image.asset('assets/images/slpsl06.jpg',
+                                  fit: BoxFit.contain),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Text(
+                                      "Saint Laurent",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Text(
+                                        "\$700",
+                                        style: TextStyle(
+                                            fontSize: 23,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.start,
+                                        children: <Widget>[
+                                          Icon(Icons.location_on,
+                                              size: 16, color: Colors.black38),
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 8.0),
+                                            child: Text(
+                                              "Ho Chi Minh City",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.black38),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
                     Expanded(
                       child: SizedBox(
-                        height: 200,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            side: BorderSide(color: Colors.grey, width: 1),
-                          ),
-                          child: Image.asset('assets/images/slpsl06.jpg',
-                              fit: BoxFit.contain),
+                        height: 300,
+                        child: Column(
+                          children: <Widget>[
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                                side: BorderSide(color: Colors.white, width: 2),
+                              ),
+                              child: Image.asset('assets/images/gucci.jpg',
+                                  fit: BoxFit.contain),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Text(
+                                      "Gucci Slides",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Text(
+                                        "\$450",
+                                        style: TextStyle(
+                                            fontSize: 23,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.start,
+                                        children: <Widget>[
+                                          Icon(Icons.location_on,
+                                              size: 16, color: Colors.black38),
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 8.0),
+                                            child: Text(
+                                              "Ho Chi Minh City",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.black38),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
                   ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: SizedBox(
+                          height: 300,
+                          child: Column(
+                            children: <Widget>[
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                  side: BorderSide(color: Colors.white, width: 2),
+                                ),
+                                child: Image.asset('assets/images/mcm.jpg',
+                                    fit: BoxFit.contain),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0),
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text(
+                                        "MCM Backpack",
+                                        style: TextStyle(fontSize: 18),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Text(
+                                          "\$1,000",
+                                          style: TextStyle(
+                                              fontSize: 23,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                          children: <Widget>[
+                                            Icon(Icons.location_on,
+                                                size: 16, color: Colors.black38),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 8.0),
+                                              child: Text(
+                                                "Ho Chi Minh City",
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    color: Colors.black38),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: SizedBox(
+                          height: 300,
+                          child: Column(
+                            children: <Widget>[
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                  side: BorderSide(color: Colors.white, width: 2),
+                                ),
+                                child: Image.asset('assets/images/yzy.jpg',
+                                    fit: BoxFit.contain),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0),
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text(
+                                        "Yeezy V1",
+                                        style: TextStyle(fontSize: 18),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Text(
+                                          "\$300",
+                                          style: TextStyle(
+                                              fontSize: 23,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                          children: <Widget>[
+                                            Icon(Icons.location_on,
+                                                size: 16, color: Colors.black38),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 8.0),
+                                              child: Text(
+                                                "Ho Chi Minh City",
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    color: Colors.black38),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
