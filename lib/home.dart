@@ -1,3 +1,4 @@
+import 'package:fashion_market/product_details.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'favorite.dart';
@@ -70,122 +71,138 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: SizedBox(
-                        height: 300,
-                        child: Column(
-                          children: <Widget>[
-                            Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5),
-                                side: BorderSide(color: Colors.white, width: 2),
-                              ),
-                              child: Image.asset('assets/images/1sdior.jpg',
-                                  fit: BoxFit.contain),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0),
-                              child: Container(
-                                child: Column(
-                                  children: <Widget>[
-                                    Text(
-                                      "Jordan 1 Dior",
-                                      style: TextStyle(fontSize: 18),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 8.0),
-                                      child: Text(
-                                        "\$8,000",
-                                        style: TextStyle(
-                                            fontSize: 23,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 8.0),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: <Widget>[
-                                          Icon(Icons.location_on,
-                                              size: 16, color: Colors.black38),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                left: 8.0),
-                                            child: Text(
-                                              "Ho Chi Minh City",
-                                              style: TextStyle(
-                                                  fontSize: 16,
-                                                  color: Colors.black38),
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ProductDetails()),
+                          );
+                        },
+                        child: SizedBox(
+                          height: 300,
+                          child: Column(
+                            children: <Widget>[
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                  side: BorderSide(color: Colors.white, width: 2),
                                 ),
+                                child: Image.asset('assets/images/1sdior.jpg',
+                                    fit: BoxFit.contain),
                               ),
-                            )
-                          ],
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0),
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text(
+                                        "Jordan 1 Dior",
+                                        style: TextStyle(fontSize: 18),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Text(
+                                          "\$8,000",
+                                          style: TextStyle(
+                                              fontSize: 23,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: <Widget>[
+                                            Icon(Icons.location_on,
+                                                size: 16, color: Colors.black38),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 8.0),
+                                              child: Text(
+                                                "Ho Chi Minh City",
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    color: Colors.black38),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
                     Expanded(
-                      child: SizedBox(
-                        height: 300,
-                        child: Column(
-                          children: <Widget>[
-                            Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5),
-                                side: BorderSide(color: Colors.white, width: 2),
-                              ),
-                              child: Image.asset('assets/images/balenspeed.jpg',
-                                  fit: BoxFit.contain),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0),
-                              child: Container(
-                                child: Column(
-                                  children: <Widget>[
-                                    Text(
-                                      "Balenciaga Speed",
-                                      style: TextStyle(fontSize: 18),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 8.0),
-                                      child: Text(
-                                        "\$500",
-                                        style: TextStyle(
-                                            fontSize: 23,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 8.0),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.center,
-                                        children: <Widget>[
-                                          Icon(Icons.location_on,
-                                              size: 16, color: Colors.black38),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                left: 8.0),
-                                            child: Text(
-                                              "Ho Chi Minh City",
-                                              style: TextStyle(
-                                                  fontSize: 16,
-                                                  color: Colors.black38),
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ProductDetails()),
+                          );
+                        },
+                        child: SizedBox(
+                          height: 300,
+                          child: Column(
+                            children: <Widget>[
+                              Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                  side: BorderSide(color: Colors.white, width: 2),
                                 ),
+                                child: Image.asset('assets/images/balenspeed.jpg',
+                                    fit: BoxFit.contain),
                               ),
-                            )
-                          ],
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0),
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text(
+                                        "Balenciaga Speed",
+                                        style: TextStyle(fontSize: 18),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Text(
+                                          "\$500",
+                                          style: TextStyle(
+                                              fontSize: 23,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                          children: <Widget>[
+                                            Icon(Icons.location_on,
+                                                size: 16, color: Colors.black38),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 8.0),
+                                              child: Text(
+                                                "Ho Chi Minh City",
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    color: Colors.black38),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
