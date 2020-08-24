@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'favorite.dart';
+import 'user.dart';
+import 'chat.dart';
+import 'add_item.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -18,14 +22,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff004466),
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.white,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
               'Fashion Market',
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.black,
                 fontSize: 40,
                 fontFamily: "Signatra",
               ),
@@ -37,7 +42,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   iconSize: 30,
                   icon: Icon(
                     Icons.notifications,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   onPressed: () {},
                 ),
@@ -45,7 +50,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   iconSize: 30,
                   icon: Icon(
                     Icons.search,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   onPressed: () {},
                 )
@@ -99,7 +104,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.start,
+                                            MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -159,7 +164,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.start,
+                                        MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -223,7 +228,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.start,
+                                        MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -283,7 +288,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.start,
+                                        MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -347,7 +352,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.start,
+                                        MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -407,7 +412,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.start,
+                                        MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -473,7 +478,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         padding: const EdgeInsets.only(top: 8.0),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.start,
+                                          MainAxisAlignment.center,
                                           children: <Widget>[
                                             Icon(Icons.location_on,
                                                 size: 16, color: Colors.black38),
@@ -533,7 +538,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         padding: const EdgeInsets.only(top: 8.0),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.start,
+                                          MainAxisAlignment.center,
                                           children: <Widget>[
                                             Icon(Icons.location_on,
                                                 size: 16, color: Colors.black38),
@@ -564,6 +569,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               ],
             ),
           ),
+          Favorite(),
+          AddItem(),
+          Chat(),
+          User(),
         ]),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -584,8 +593,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           );
         }).toList(),
         iconSize: 35,
-        selectedItemColor: Colors.white,
-        backgroundColor: const Color(0xff004466),
+        selectedItemColor: Colors.black,
+        backgroundColor: Colors.white,
       ),
     );
   }
@@ -598,9 +607,9 @@ class Destination {
 }
 
 const List<Destination> allDestinations = <Destination>[
-  Destination('', Icons.home),
-  Destination('', Icons.favorite_border),
-  Destination('', Icons.add),
-  Destination('', Icons.chat_bubble_outline),
-  Destination('', Icons.person),
+  Destination('Home', Icons.home),
+  Destination('Favorite', Icons.favorite_border),
+  Destination('Add', Icons.add),
+  Destination('Chat', Icons.chat_bubble_outline),
+  Destination('Profile', Icons.person),
 ];
