@@ -72,10 +72,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   children: <Widget>[
                     Expanded(
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => ProductDetails()),
+                            MaterialPageRoute(
+                                builder: (context) => ProductDetails()),
                           );
                         },
                         child: SizedBox(
@@ -85,9 +86,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
-                                  side: BorderSide(color: Colors.white, width: 2),
+                                  side:
+                                      BorderSide(color: Colors.white, width: 2),
                                 ),
-                                child: Image.asset('assets/images/1sdior.jpg',
+                                child: Image.asset('assets/images/Capture.PNG',
                                     fit: BoxFit.contain),
                               ),
                               Padding(
@@ -96,26 +98,29 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   child: Column(
                                     children: <Widget>[
                                       Text(
-                                        "Jordan 1 Dior",
+                                        "Nike Air Max 97",
                                         style: TextStyle(fontSize: 18),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Text(
-                                          "\$8,000",
+                                          "2,400,000 VND",
                                           style: TextStyle(
                                               fontSize: 23,
                                               fontWeight: FontWeight.bold),
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: <Widget>[
                                             Icon(Icons.location_on,
-                                                size: 16, color: Colors.black38),
+                                                size: 16,
+                                                color: Colors.black38),
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 8.0),
@@ -140,10 +145,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     ),
                     Expanded(
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => ProductDetails()),
+                            MaterialPageRoute(
+                                builder: (context) => ProductDetails()),
                           );
                         },
                         child: SizedBox(
@@ -153,9 +159,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
-                                  side: BorderSide(color: Colors.white, width: 2),
+                                  side:
+                                      BorderSide(color: Colors.white, width: 2),
                                 ),
-                                child: Image.asset('assets/images/balenspeed.jpg',
+                                child: Image.asset(
+                                    'assets/images/balenspeed.jpg',
                                     fit: BoxFit.contain),
                               ),
                               Padding(
@@ -168,7 +176,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         style: TextStyle(fontSize: 18),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Text(
                                           "\$500",
                                           style: TextStyle(
@@ -177,13 +186,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                                              MainAxisAlignment.center,
                                           children: <Widget>[
                                             Icon(Icons.location_on,
-                                                size: 16, color: Colors.black38),
+                                                size: 16,
+                                                color: Colors.black38),
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 8.0),
@@ -220,7 +231,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                 borderRadius: BorderRadius.circular(5),
                                 side: BorderSide(color: Colors.white, width: 2),
                               ),
-                              child: Image.asset('assets/images/guccirhyton.jpg',
+                              child: Image.asset(
+                                  'assets/images/guccirhyton.jpg',
                                   fit: BoxFit.contain),
                             ),
                             Padding(
@@ -245,7 +257,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                            MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -305,7 +317,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                            MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -369,7 +381,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                            MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -429,7 +441,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       padding: const EdgeInsets.only(top: 8.0),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                            MainAxisAlignment.center,
                                         children: <Widget>[
                                           Icon(Icons.location_on,
                                               size: 16, color: Colors.black38),
@@ -468,7 +480,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
-                                  side: BorderSide(color: Colors.white, width: 2),
+                                  side:
+                                      BorderSide(color: Colors.white, width: 2),
                                 ),
                                 child: Image.asset('assets/images/mcm.jpg',
                                     fit: BoxFit.contain),
@@ -483,7 +496,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         style: TextStyle(fontSize: 18),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Text(
                                           "\$1,000",
                                           style: TextStyle(
@@ -492,13 +506,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                                              MainAxisAlignment.center,
                                           children: <Widget>[
                                             Icon(Icons.location_on,
-                                                size: 16, color: Colors.black38),
+                                                size: 16,
+                                                color: Colors.black38),
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 8.0),
@@ -528,7 +544,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
-                                  side: BorderSide(color: Colors.white, width: 2),
+                                  side:
+                                      BorderSide(color: Colors.white, width: 2),
                                 ),
                                 child: Image.asset('assets/images/yzy.jpg',
                                     fit: BoxFit.contain),
@@ -543,7 +560,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         style: TextStyle(fontSize: 18),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Text(
                                           "\$300",
                                           style: TextStyle(
@@ -552,13 +570,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 8.0),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                                              MainAxisAlignment.center,
                                           children: <Widget>[
                                             Icon(Icons.location_on,
-                                                size: 16, color: Colors.black38),
+                                                size: 16,
+                                                color: Colors.black38),
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 8.0),
