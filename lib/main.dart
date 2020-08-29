@@ -1,7 +1,7 @@
-import 'package:fashion_market/views/sign_up.dart';
+
 import 'package:flutter/material.dart';
-import 'views/home.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:fashion_market/helpers/authenticate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
           primaryColor: Colors.white),
-      home: SignUp(),
+      home: Authenticate(),
     );
   }
 }

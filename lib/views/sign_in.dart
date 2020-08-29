@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:fashion_market/widgets/widgets.dart';
 import 'package:fashion_market/helpers/sizes_helpers.dart';
 class SignIn extends StatefulWidget {
+  final Function toggle;
+
+  SignIn(this.toggle);
   @override
   _SignInState createState() => _SignInState();
 }
@@ -77,12 +80,20 @@ class _SignInState extends State<SignIn> {
                     "Don't have account?",
                     style: mediumTextStyle(),
                   ),
-                  Text(
-                    "Register now",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      decoration: TextDecoration.underline
+                  GestureDetector(
+                    onTap: () {
+                      widget.toggle();
+                    },
+                    child: Container(
+                      padding: EdgeInsets.symmetric(vertical: 8),
+                      child: Text(
+                        "Register now",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          decoration: TextDecoration.underline
+                        ),
+                      ),
                     ),
                   )
                 ],

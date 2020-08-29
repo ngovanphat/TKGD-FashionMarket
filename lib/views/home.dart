@@ -25,44 +25,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Text(
-              'Fashion Market',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 40,
-                fontFamily: "Signatra",
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                IconButton(
-                  iconSize: 30,
-                  icon: Icon(
-                    Icons.search,
-                    color: Colors.black,
-                  ),
-                  onPressed: () {},
-                ),
-                IconButton(
-                  iconSize: 30,
-                  icon: Icon(
-                    Icons.notifications,
-                    color: Colors.black,
-                  ),
-                  onPressed: () {},
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
+      appBar: appBarHome(context),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: IndexedStack(index: _currentIndex, children: [
