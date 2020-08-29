@@ -1,10 +1,12 @@
-import 'file:///C:/Users/LENOVO/OneDrive/Source/Flutter/fashion_market/lib/views/product_details.dart';
+import 'package:fashion_market/views/product_details.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'favorite.dart';
-import 'user.dart';
-import 'chat.dart';
-import 'add_item.dart';
+import 'package:fashion_market/views/chat.dart';
+import 'package:fashion_market/views/profile.dart';
+import 'package:fashion_market/views/add_item.dart';
+import 'package:fashion_market/views/favorite.dart';
+import 'package:fashion_market/widgets/widgets.dart';
+
 
 class Home extends StatefulWidget {
   @override
@@ -618,7 +620,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           Favorite(),
           AddItem(),
           Chat(),
-          User(),
+          Profile(),
         ]),
       ),
       bottomNavigationBar: BottomNavigationBar(

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "139395715113",
+    "firebase_url": "https://fashion-market-d6f8d.firebaseio.com",
+    "project_id": "fashion-market-d6f8d",
+    "storage_bucket": "fashion-market-d6f8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139395715113:android:d5f1d2a311f03c47bb0c38",
+        "android_client_info": {
+          "package_name": "com.example.fashion_market"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139395715113-mrkstpj86q04rodhfpbuj6a7g7l97gak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxxoFnmEifSouWqn5YobCjM7tRukY4xAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139395715113-mrkstpj86q04rodhfpbuj6a7g7l97gak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
