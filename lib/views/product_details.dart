@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:fashion_market/sizes_helpers.dart';
+import 'file:///C:/Users/LENOVO/OneDrive/Source/Flutter/fashion_market/lib/helpers/sizes_helpers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -86,32 +86,33 @@ class _ProductDetailsState extends State<ProductDetails>
                             "Nike Air Max 97 Essential",
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 25),
+                                fontSize: 32, fontFamily: "Signatra"),
                           ),
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: <Widget>[
                             Container(
-                              padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                              padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
                                   Container(
                                     margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                                     padding: EdgeInsets.all(0),
                                     decoration: BoxDecoration(
-                                        color: Colors.orange,
+                                        color: Colors.white,
                                         borderRadius:
                                             BorderRadius.circular(100),
                                         border: Border.all(
-                                            width: 2, color: Colors.orange)),
+                                            width: 2, color: Colors.white)),
                                     child: Icon(Icons.star,
-                                        color: Colors.yellow, size: 25),
+                                        color: Colors.orange, size: 25),
                                   ),
                                   Text(
                                     "4.8",
                                     style: TextStyle(
-                                      fontSize: 25,
+                                      fontSize: 16,
                                     ),
                                   )
                                 ],
@@ -124,47 +125,56 @@ class _ProductDetailsState extends State<ProductDetails>
                     Container(
                       padding: EdgeInsets.fromLTRB(15, 0, 5, 0),
                       child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Text(
-                            "2.400.000",
-                            style: TextStyle(
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                            ),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "100",
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(width: 5),
+                              Text(
+                                "USD",
+                                style:
+                                    TextStyle(fontSize: 18, color: Colors.black38,fontFamily: "Signatra", ),
+                                textAlign: TextAlign.justify,
+                              ),
+
+                            ],
                           ),
-                          SizedBox(width: 5),
-                          Text(
-                            "VND ",
-                            style:
-                                TextStyle(fontSize: 18, color: Colors.black38),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.fromLTRB(15, 0, 5, 0),
+                                child: Text(
+                                  "In Stock",
+                                  style: TextStyle(fontSize: 20, fontFamily: "Signatra"),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
                         Container(
-                          padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
-                          child: Text(
-                            "In Stock",
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
+                          padding: EdgeInsets.fromLTRB(15, 5,  10, 0),
                           child: Text(
                             "Uploaded 2 days ago in Hồ Chí Minh",
                             style:
-                                TextStyle(fontSize: 16, color: Colors.black87),
+                                TextStyle(fontSize: 18, color: Colors.black87,
+                                  fontFamily: "Signatra"
+                                ),
                           ),
                         ),
                       ],
@@ -182,40 +192,48 @@ class _ProductDetailsState extends State<ProductDetails>
                                 margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                                 padding: EdgeInsets.all(5),
                                 decoration: BoxDecoration(
-                                    color: Colors.blueAccent,
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(100),
+                                    border: Border.all(
+                                        width: 2, color: Colors.redAccent)),
+                                child: Icon(Icons.favorite,
+                                    color: Colors.redAccent, size: 25),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "Follow",
+                                  style: TextStyle(
+                                      fontSize: 18, color: Colors.black87, fontFamily: "Signatra"
+
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
                                     borderRadius: BorderRadius.circular(100),
                                     border: Border.all(
                                         width: 2, color: Colors.blueAccent)),
                                 child: Icon(Icons.message,
-                                    color: Colors.white, size: 25),
+                                    color: Colors.blueAccent, size: 25),
                               ),
-                              Text(
-                                "Message",
-                                style: TextStyle(
-                                    fontSize: 16, color: Colors.black87),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                                padding: EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                    color: Colors.yellowAccent,
-                                    borderRadius: BorderRadius.circular(100),
-                                    border: Border.all(
-                                        width: 2, color: Colors.yellowAccent)),
-                                child: Icon(Icons.bookmark,
-                                    color: Colors.redAccent, size: 25),
-                              ),
-                              Text(
-                                "Save",
-                                style: TextStyle(
-                                    fontSize: 16, color: Colors.black87),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "Message",
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.black87,fontFamily: "Signatra"),
+                                ),
                               ),
                             ],
                           ),
@@ -228,17 +246,20 @@ class _ProductDetailsState extends State<ProductDetails>
                                 margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                                 padding: EdgeInsets.all(5),
                                 decoration: BoxDecoration(
-                                    color: Colors.orange,
+                                    color: Colors.white,
                                     borderRadius: BorderRadius.circular(100),
                                     border: Border.all(
                                         width: 2, color: Colors.orange)),
                                 child: Icon(Icons.rate_review,
-                                    color: Colors.white, size: 25),
+                                    color: Colors.orange, size: 25),
                               ),
-                              Text(
-                                "Rate",
-                                style: TextStyle(
-                                    fontSize: 16, color: Colors.black87),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "Rate",
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.black87,fontFamily: "Signatra"),
+                                ),
                               ),
                             ],
                           ),
@@ -251,18 +272,21 @@ class _ProductDetailsState extends State<ProductDetails>
                                 margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                                 padding: EdgeInsets.all(5),
                                 decoration: BoxDecoration(
-                                    color: Colors.lightBlue[800],
+                                    color: Colors.white,
                                     borderRadius: BorderRadius.circular(100),
                                     border: Border.all(
                                         width: 2,
-                                        color: Colors.lightBlue[900])),
+                                        color: Colors.lightBlue)),
                                 child: Icon(Icons.more_horiz,
-                                    color: Colors.white, size: 25),
+                                    color: Colors.lightBlue, size: 25),
                               ),
-                              Text(
-                                "More",
-                                style: TextStyle(
-                                    fontSize: 16, color: Colors.black87),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  "More",
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.black87,fontFamily: "Signatra"),
+                                ),
                               ),
                             ],
                           ),
@@ -292,13 +316,13 @@ class _ProductDetailsState extends State<ProductDetails>
                           Navigator.pop(context);
                         },
                         child: new Icon(
-                          Icons.arrow_back_ios,
-                          color: Colors.black54,
-                          size: 20,
+                          Icons.arrow_back,
+                          color: Colors.blue,
+                          size: 25,
                         ),
                         shape: CircleBorder(),
                         fillColor: Colors.white,
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(10.0),
                       ),
                     ],
                   )),
@@ -321,18 +345,18 @@ class _ProductDetailsState extends State<ProductDetails>
               child: Text(
                 "Seller Information",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(fontSize: 30,fontFamily: "Signatra"),
               ),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
                   child: Text(
                     "See profile",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 16, fontFamily: "Signatra", color: Colors.blue
                     ),
                   ),
                 ),
@@ -369,9 +393,9 @@ class _ProductDetailsState extends State<ProductDetails>
                         Container(
                           padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                           child: Text(
-                            "Seller name",
+                            "lmquannn",
                             overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 18),
+                            style: TextStyle(fontSize: 22,fontFamily: "Signatra"),
                           ),
                         ),
                         SizedBox(height: 5),
@@ -388,7 +412,7 @@ class _ProductDetailsState extends State<ProductDetails>
                                   border: Border.all(
                                       width: 2, color: Color(0xFFE82D3F))),
                               child: Icon(Icons.favorite,
-                                  color: Colors.white, size: 13),
+                                  color: Colors.white, size: 15),
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -396,7 +420,7 @@ class _ProductDetailsState extends State<ProductDetails>
                                 Text(
                                   "4.2",
                                   style: TextStyle(
-                                    fontSize: 16,
+                                    fontSize: 14,
                                   ),
                                 ),
                               ],
@@ -408,20 +432,6 @@ class _ProductDetailsState extends State<ProductDetails>
                   ],
                 ),
               ],
-            ),
-            Container(
-              padding: EdgeInsets.fromLTRB(15, 0, 5, 0),
-              child: Column(
-                children: <Widget>[
-                  RaisedButton(
-                    child: Text("Follow"),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: BorderSide(color: Colors.grey)),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
             ),
           ],
         ),
@@ -441,32 +451,31 @@ class _ProductDetailsState extends State<ProductDetails>
               child: Text(
                 "Details",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(fontSize: 30,fontFamily: "Signatra"),
               ),
             ),
           ],
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Container(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
               child: Text(
                 "Condition",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 23,fontFamily: "Signatra"),
               ),
             ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                  padding: EdgeInsets.fromLTRB(50, 0, 10, 0),
                   child: Text(
                     "New",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,fontFamily: "Signatra"
                     ),
                   ),
                 ),
@@ -486,11 +495,11 @@ class _ProductDetailsState extends State<ProductDetails>
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Container(
-              padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
+              padding: EdgeInsets.fromLTRB(15, 0, 0, 5),
               child: Text(
                 "Details",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(fontSize: 30, fontFamily: "Signatra"),
               ),
             ),
           ],
@@ -506,7 +515,7 @@ class _ProductDetailsState extends State<ProductDetails>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus neque ut enim congue egestas. Sed id lacus sit amet risus dapibus gravida. Nunc accumsan, sem eget elementum condimentum, nunc odio iaculis mi, et consectetur ante augue ut tellus. Fusce iaculis vitae felis vitae imperdiet. Ut ultricies pellentesque lacus a pharetra. Sed maximus velit non lobortis consequat. Vestibulum eu felis a quam sagittis consequat ut at nulla. Duis rhoncus, tellus at sollicitudin condimentum, tellus libero pharetra lacus, eget accumsan erat massa eget dolor. Aliquam erat enim, volutpat vel est a, tempus euismod tellus. ",
                 overflow: TextOverflow.ellipsis,
                 maxLines: 10,
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 18, fontFamily: "Signatra"),
               ),
             ),
           ],
@@ -527,7 +536,7 @@ class _ProductDetailsState extends State<ProductDetails>
               child: Text(
                 "Location",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(fontSize: 30, fontFamily: "Signatra"),
               ),
             ),
           ],
@@ -556,7 +565,7 @@ class _ProductDetailsState extends State<ProductDetails>
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   child: Stack(
                     children: <Widget>[
-                      Image.network(item, fit: BoxFit.cover, width: 1500.0),
+                      Image.network(item, fit: BoxFit.cover, width: 1500.0,),
                       Positioned(
                         bottom: 0.0,
                         left: 0.0,

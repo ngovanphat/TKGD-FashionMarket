@@ -1,4 +1,4 @@
-import 'package:fashion_market/post_item.dart';
+import 'file:///C:/Users/LENOVO/OneDrive/Source/Flutter/fashion_market/lib/views/post_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
