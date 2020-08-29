@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fashion_market/views/search.dart';
 
 
 Widget appBarSignIn(BuildContext context){
@@ -45,7 +46,11 @@ Widget appBarHome(BuildContext context){
                 Icons.search,
                 color: Colors.black,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => SearchScreen()
+                ));
+              },
             ),
             IconButton(
               iconSize: 30,
@@ -91,6 +96,7 @@ TextStyle simpleTextFieldStyle(){
 TextStyle mediumTextStyle(){
   return TextStyle(
       color: Colors.black,
-      fontSize: 18
+      fontSize: 20,
+      fontFamily: "Signatra"
   );
 }

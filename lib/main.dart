@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:fashion_market/helpers/authenticate.dart';
+import 'package:fashion_market/helpers/helperfunction.dart';
+import 'package:fashion_market/views/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -9,8 +11,31 @@ void main() async {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+  bool isUserLoggedIn =  false;
+
+  @override
+  void initState() {
+    getLoggedInState();
+    super.initState();
+  }
+
+  getLoggedInState() async {
+    await HelperFunction.getUserLoggedInSharedPreference().then((value){
+      setState(() {
+        isUserLoggedIn =  value;
+      });
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +44,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
           primaryColor: Colors.white),
-      home: Authenticate(),
+      home: isUserLoggedIn ? Home() :  Authenticate(),
     );
   }
 }

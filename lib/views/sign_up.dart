@@ -1,9 +1,11 @@
 import 'package:fashion_market/services/auth.dart';
+import 'package:fashion_market/services/database.dart';
 import 'package:fashion_market/views/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fashion_market/widgets/widgets.dart';
 import 'package:fashion_market/helpers/sizes_helpers.dart';
+import 'package:fashion_market/helpers/helperfunction.dart';
 class SignUp extends StatefulWidget {
   final Function toggle;
 
@@ -22,15 +24,26 @@ class _SignUpState extends State<SignUp> {
   TextEditingController email = new TextEditingController();
   TextEditingController password = new TextEditingController();
   AuthMethods authMethods = new AuthMethods();
-
+  DatabaseMethods  databaseMethods = new DatabaseMethods();
 
   onClickSignUp(){
     if(formKey.currentState.validate()){
+        Map<String,String> userInfoMap = {
+          "name": username.text.trim(),
+          "email": email.text.trim()
+        };
+
+        HelperFunction.saveUserEmailSharedPreference(email.text.trim());
+        HelperFunction.saveUserNameSharedPreference(username.text.trim());
+
         setState(() {
           isLoading = true;
         });
         authMethods.signUpWithEmailAndPassword(email.text.trim(), password.text.trim()).then((value) {
           //print("${value.uid}");
+
+          databaseMethods.uploadUserInfo(userInfoMap);
+          HelperFunction.saveUserLoggedInSharedPreference(true);
           Navigator.pushReplacement(context, MaterialPageRoute(
               builder: (context) => Home()
           ));
@@ -139,7 +152,10 @@ class _SignUpState extends State<SignUp> {
                 children: <Widget>[
                   Text(
                     "Already have account?",
-                    style: mediumTextStyle(),
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                    ),
                   ),
                   GestureDetector(
                     onTap: (){
