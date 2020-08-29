@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
           primaryColor: Colors.white),
-      home: isUserLoggedIn ? Home() :  Authenticate(),
+      home: isUserLoggedIn!= null ? Home() :  Authenticate(),
     );
   }
 }

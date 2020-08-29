@@ -84,6 +84,7 @@ class ChatRoomTile extends StatelessWidget {
           children: <Widget>[
             Container(
               margin: EdgeInsets.only(left: 5),
+              padding: EdgeInsets.all(8),
               height: 50,
               width: 50,
               alignment: Alignment.center,
