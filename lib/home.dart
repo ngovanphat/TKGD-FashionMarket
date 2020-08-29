@@ -609,7 +609,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             title: Text(destination.title),
           );
         }).toList(),
-        iconSize: 35,
+        iconSize: 30,
         selectedItemColor: Colors.black,
         backgroundColor: Colors.white,
       ),
