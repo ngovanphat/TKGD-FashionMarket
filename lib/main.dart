@@ -1,6 +1,5 @@
 import 'package:fashion_market/views/sign_up.dart';
 import 'package:flutter/material.dart';
-
 import 'views/home.dart';
 import 'package:firebase_core/firebase_core.dart';
 

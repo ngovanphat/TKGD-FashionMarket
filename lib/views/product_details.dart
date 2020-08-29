@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'file:///C:/Users/LENOVO/OneDrive/Source/Flutter/fashion_market/lib/helpers/sizes_helpers.dart';
+import 'package:fashion_market/helpers/sizes_helpers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -85,8 +85,8 @@ class _ProductDetailsState extends State<ProductDetails>
                           child: Text(
                             "Nike Air Max 97 Essential",
                             overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                                fontSize: 32, fontFamily: "Signatra"),
+                            style:
+                                TextStyle(fontSize: 32, fontFamily: "Signatra"),
                           ),
                         ),
                         Column(
@@ -140,11 +140,13 @@ class _ProductDetailsState extends State<ProductDetails>
                               SizedBox(width: 5),
                               Text(
                                 "USD",
-                                style:
-                                    TextStyle(fontSize: 18, color: Colors.black38,fontFamily: "Signatra", ),
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.black38,
+                                  fontFamily: "Signatra",
+                                ),
                                 textAlign: TextAlign.justify,
                               ),
-
                             ],
                           ),
                           Row(
@@ -155,7 +157,8 @@ class _ProductDetailsState extends State<ProductDetails>
                                 padding: EdgeInsets.fromLTRB(15, 0, 5, 0),
                                 child: Text(
                                   "In Stock",
-                                  style: TextStyle(fontSize: 20, fontFamily: "Signatra"),
+                                  style: TextStyle(
+                                      fontSize: 20, fontFamily: "Signatra"),
                                 ),
                               ),
                             ],
@@ -168,13 +171,13 @@ class _ProductDetailsState extends State<ProductDetails>
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
                         Container(
-                          padding: EdgeInsets.fromLTRB(15, 5,  10, 0),
+                          padding: EdgeInsets.fromLTRB(15, 5, 10, 0),
                           child: Text(
                             "Uploaded 2 days ago in Hồ Chí Minh",
-                            style:
-                                TextStyle(fontSize: 18, color: Colors.black87,
-                                  fontFamily: "Signatra"
-                                ),
+                            style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black87,
+                                fontFamily: "Signatra"),
                           ),
                         ),
                       ],
@@ -204,9 +207,9 @@ class _ProductDetailsState extends State<ProductDetails>
                                 child: Text(
                                   "Follow",
                                   style: TextStyle(
-                                      fontSize: 18, color: Colors.black87, fontFamily: "Signatra"
-
-                                  ),
+                                      fontSize: 18,
+                                      color: Colors.black87,
+                                      fontFamily: "Signatra"),
                                 ),
                               ),
                             ],
@@ -232,7 +235,9 @@ class _ProductDetailsState extends State<ProductDetails>
                                 child: Text(
                                   "Message",
                                   style: TextStyle(
-                                      fontSize: 16, color: Colors.black87,fontFamily: "Signatra"),
+                                      fontSize: 16,
+                                      color: Colors.black87,
+                                      fontFamily: "Signatra"),
                                 ),
                               ),
                             ],
@@ -258,7 +263,9 @@ class _ProductDetailsState extends State<ProductDetails>
                                 child: Text(
                                   "Rate",
                                   style: TextStyle(
-                                      fontSize: 16, color: Colors.black87,fontFamily: "Signatra"),
+                                      fontSize: 16,
+                                      color: Colors.black87,
+                                      fontFamily: "Signatra"),
                                 ),
                               ),
                             ],
@@ -275,8 +282,7 @@ class _ProductDetailsState extends State<ProductDetails>
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(100),
                                     border: Border.all(
-                                        width: 2,
-                                        color: Colors.lightBlue)),
+                                        width: 2, color: Colors.lightBlue)),
                                 child: Icon(Icons.more_horiz,
                                     color: Colors.lightBlue, size: 25),
                               ),
@@ -285,7 +291,9 @@ class _ProductDetailsState extends State<ProductDetails>
                                 child: Text(
                                   "More",
                                   style: TextStyle(
-                                      fontSize: 16, color: Colors.black87,fontFamily: "Signatra"),
+                                      fontSize: 16,
+                                      color: Colors.black87,
+                                      fontFamily: "Signatra"),
                                 ),
                               ),
                             ],
@@ -345,7 +353,7 @@ class _ProductDetailsState extends State<ProductDetails>
               child: Text(
                 "Seller Information",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 30,fontFamily: "Signatra"),
+                style: TextStyle(fontSize: 30, fontFamily: "Signatra"),
               ),
             ),
             Column(
@@ -356,8 +364,9 @@ class _ProductDetailsState extends State<ProductDetails>
                   child: Text(
                     "See profile",
                     style: TextStyle(
-                      fontSize: 16, fontFamily: "Signatra", color: Colors.blue
-                    ),
+                        fontSize: 16,
+                        fontFamily: "Signatra",
+                        color: Colors.blue),
                   ),
                 ),
               ],
@@ -395,7 +404,8 @@ class _ProductDetailsState extends State<ProductDetails>
                           child: Text(
                             "lmquannn",
                             overflow: TextOverflow.ellipsis,
-                            style: TextStyle(fontSize: 22,fontFamily: "Signatra"),
+                            style:
+                                TextStyle(fontSize: 22, fontFamily: "Signatra"),
                           ),
                         ),
                         SizedBox(height: 5),
@@ -451,7 +461,7 @@ class _ProductDetailsState extends State<ProductDetails>
               child: Text(
                 "Details",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 30,fontFamily: "Signatra"),
+                style: TextStyle(fontSize: 30, fontFamily: "Signatra"),
               ),
             ),
           ],
@@ -465,7 +475,7 @@ class _ProductDetailsState extends State<ProductDetails>
               child: Text(
                 "Condition",
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 23,fontFamily: "Signatra"),
+                style: TextStyle(fontSize: 23, fontFamily: "Signatra"),
               ),
             ),
             Column(
@@ -474,9 +484,7 @@ class _ProductDetailsState extends State<ProductDetails>
                   padding: EdgeInsets.fromLTRB(50, 0, 10, 0),
                   child: Text(
                     "New",
-                    style: TextStyle(
-                      fontSize: 20,fontFamily: "Signatra"
-                    ),
+                    style: TextStyle(fontSize: 20, fontFamily: "Signatra"),
                   ),
                 ),
               ],
@@ -565,7 +573,11 @@ class _ProductDetailsState extends State<ProductDetails>
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   child: Stack(
                     children: <Widget>[
-                      Image.network(item, fit: BoxFit.cover, width: 1500.0,),
+                      Image.network(
+                        item,
+                        fit: BoxFit.cover,
+                        width: 1500.0,
+                      ),
                       Positioned(
                         bottom: 0.0,
                         left: 0.0,
