@@ -37,270 +37,276 @@ class _ProductDetailsState extends State<ProductDetails>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: Container(
-        decoration: BoxDecoration(
+      body: SafeArea(
+        child: Container(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
-          colors: [
-            Color(0xfffbfbfb),
-            Color(0xfff7f7f7),
-          ],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-        )),
-        child: Stack(
-          children: <Widget>[
-            Container(
-              color: Colors.white,
+              colors: [
+                Color(0xfffbfbfb),
+                Color(0xfff7f7f7),
+              ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
             ),
-            SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  NotificationListener<OverscrollIndicatorNotification>(
-                    // để che hiệu ứng glow khi cuộn ở 2 đầu
-                    onNotification:
-                        (OverscrollIndicatorNotification overscroll) {
-                      overscroll.disallowGlow();
-                      return true;
-                    },
-                    child: CarouselSlider(
-                      options: CarouselOptions(
-                        aspectRatio: 2.0,
-                        enlargeCenterPage: true,
-                        enableInfiniteScroll: false,
-                        initialPage: 0,
-                        autoPlay: false,
+          ),
+          child: Stack(
+            children: <Widget>[
+              Container(
+                color: Colors.white,
+              ),
+              SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    NotificationListener<OverscrollIndicatorNotification>(
+                      // để che hiệu ứng glow khi cuộn ở 2 đầu
+                      onNotification:
+                          (OverscrollIndicatorNotification overscroll) {
+                        overscroll.disallowGlow();
+                        return true;
+                      },
+                      child: CarouselSlider(
+                        options: CarouselOptions(
+                          aspectRatio: 2.0,
+                          enlargeCenterPage: true,
+                          enableInfiniteScroll: false,
+                          initialPage: 0,
+                          autoPlay: false,
+                        ),
+                        items: imageSliders,
                       ),
-                      items: imageSliders,
                     ),
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
-                        child: Text(
-                          "Nike Air Max 97 Essential",
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 25),
-                        ),
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                            child: Row(
-                              children: <Widget>[
-                                Container(
-                                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                                  padding: EdgeInsets.all(0),
-                                  decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                      borderRadius: BorderRadius.circular(100),
-                                      border: Border.all(
-                                          width: 2, color: Colors.orange)),
-                                  child: Icon(Icons.star,
-                                      color: Colors.yellow, size: 25),
-                                ),
-                                Text(
-                                  "4.8",
-                                  style: TextStyle(
-                                    fontSize: 25,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(15, 0, 5, 0),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                    SizedBox(height: 5),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Text(
-                          "2.400.000",
-                          style: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold,
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
+                          child: Text(
+                            "Nike Air Max 97 Essential",
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 25),
                           ),
                         ),
-                        SizedBox(width: 5),
-                        Text(
-                          "VND ",
-                          style: TextStyle(fontSize: 18, color: Colors.black38),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                              child: Row(
+                                children: <Widget>[
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                    padding: EdgeInsets.all(0),
+                                    decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius:
+                                            BorderRadius.circular(100),
+                                        border: Border.all(
+                                            width: 2, color: Colors.orange)),
+                                    child: Icon(Icons.star,
+                                        color: Colors.yellow, size: 25),
+                                  ),
+                                  Text(
+                                    "4.8",
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                  ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
-                        child: Text(
-                          "In Stock",
-                          style: TextStyle(fontSize: 20),
-                        ),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(15, 0, 5, 0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Text(
+                            "2.400.000",
+                            style: TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(width: 5),
+                          Text(
+                            "VND ",
+                            style:
+                                TextStyle(fontSize: 18, color: Colors.black38),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
-                        child: Text(
-                          "Uploaded 2 days ago in Hồ Chí Minh",
-                          style: TextStyle(fontSize: 16, color: Colors.black87),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 10),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                  color: Colors.blueAccent,
-                                  borderRadius: BorderRadius.circular(100),
-                                  border: Border.all(
-                                      width: 2, color: Colors.blueAccent)),
-                              child: Icon(Icons.message,
-                                  color: Colors.white, size: 25),
-                            ),
-                            Text(
-                              "Message",
-                              style: TextStyle(
-                                  fontSize: 16, color: Colors.black87),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                  color: Colors.yellowAccent,
-                                  borderRadius: BorderRadius.circular(100),
-                                  border: Border.all(
-                                      width: 2, color: Colors.yellowAccent)),
-                              child: Icon(Icons.bookmark,
-                                  color: Colors.redAccent, size: 25),
-                            ),
-                            Text(
-                              "Save",
-                              style: TextStyle(
-                                  fontSize: 16, color: Colors.black87),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                  color: Colors.orange,
-                                  borderRadius: BorderRadius.circular(100),
-                                  border: Border.all(
-                                      width: 2, color: Colors.orange)),
-                              child: Icon(Icons.rate_review,
-                                  color: Colors.white, size: 25),
-                            ),
-                            Text(
-                              "Rate",
-                              style: TextStyle(
-                                  fontSize: 16, color: Colors.black87),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                  color: Colors.lightBlue[800],
-                                  borderRadius: BorderRadius.circular(100),
-                                  border: Border.all(
-                                      width: 2, color: Colors.lightBlue[900])),
-                              child: Icon(Icons.more_horiz,
-                                  color: Colors.white, size: 25),
-                            ),
-                            Text(
-                              "More",
-                              style: TextStyle(
-                                  fontSize: 16, color: Colors.black87),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 10),
-                  _sellerInfo(),
-                  SizedBox(height: 10),
-                  _details(),
-                  SizedBox(height: 10),
-                  _description(),
-                  SizedBox(height: 10),
-                  _location(),
-                  SizedBox(height: 30),
-                ],
-              ),
-            ),
-            Container(
-                padding: EdgeInsets.all(5),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    RawMaterialButton(
-                      elevation: 2.0,
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      child: new Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.black54,
-                        size: 20,
-                      ),
-                      shape: CircleBorder(),
-                      fillColor: Colors.white,
-                      padding: const EdgeInsets.all(5.0),
                     ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+                          child: Text(
+                            "In Stock",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
+                          child: Text(
+                            "Uploaded 2 days ago in Hồ Chí Minh",
+                            style:
+                                TextStyle(fontSize: 16, color: Colors.black87),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Colors.blueAccent,
+                                    borderRadius: BorderRadius.circular(100),
+                                    border: Border.all(
+                                        width: 2, color: Colors.blueAccent)),
+                                child: Icon(Icons.message,
+                                    color: Colors.white, size: 25),
+                              ),
+                              Text(
+                                "Message",
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black87),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Colors.yellowAccent,
+                                    borderRadius: BorderRadius.circular(100),
+                                    border: Border.all(
+                                        width: 2, color: Colors.yellowAccent)),
+                                child: Icon(Icons.bookmark,
+                                    color: Colors.redAccent, size: 25),
+                              ),
+                              Text(
+                                "Save",
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black87),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(100),
+                                    border: Border.all(
+                                        width: 2, color: Colors.orange)),
+                                child: Icon(Icons.rate_review,
+                                    color: Colors.white, size: 25),
+                              ),
+                              Text(
+                                "Rate",
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black87),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.fromLTRB(15, 5, 0, 0),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Colors.lightBlue[800],
+                                    borderRadius: BorderRadius.circular(100),
+                                    border: Border.all(
+                                        width: 2,
+                                        color: Colors.lightBlue[900])),
+                                child: Icon(Icons.more_horiz,
+                                    color: Colors.white, size: 25),
+                              ),
+                              Text(
+                                "More",
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black87),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    _sellerInfo(),
+                    SizedBox(height: 10),
+                    _details(),
+                    SizedBox(height: 10),
+                    _description(),
+                    SizedBox(height: 10),
+                    _location(),
+                    SizedBox(height: 30),
                   ],
-                )),
-          ],
+                ),
+              ),
+              Container(
+                  padding: EdgeInsets.all(5),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      RawMaterialButton(
+                        elevation: 2.0,
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: new Icon(
+                          Icons.arrow_back_ios,
+                          color: Colors.black54,
+                          size: 20,
+                        ),
+                        shape: CircleBorder(),
+                        fillColor: Colors.white,
+                        padding: const EdgeInsets.all(5.0),
+                      ),
+                    ],
+                  )),
+            ],
+          ),
         ),
       ),
-    ));
+    );
   }
 
   Widget _sellerInfo() {
@@ -494,7 +500,7 @@ class _ProductDetailsState extends State<ProductDetails>
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Container(
-              width: displayWidth(context)-10,
+              width: displayWidth(context) - 10,
               padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
               child: Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus neque ut enim congue egestas. Sed id lacus sit amet risus dapibus gravida. Nunc accumsan, sem eget elementum condimentum, nunc odio iaculis mi, et consectetur ante augue ut tellus. Fusce iaculis vitae felis vitae imperdiet. Ut ultricies pellentesque lacus a pharetra. Sed maximus velit non lobortis consequat. Vestibulum eu felis a quam sagittis consequat ut at nulla. Duis rhoncus, tellus at sollicitudin condimentum, tellus libero pharetra lacus, eget accumsan erat massa eget dolor. Aliquam erat enim, volutpat vel est a, tempus euismod tellus. ",
@@ -508,6 +514,7 @@ class _ProductDetailsState extends State<ProductDetails>
       ],
     );
   }
+
   Widget _location() {
     return Column(
       children: <Widget>[
@@ -530,16 +537,17 @@ class _ProductDetailsState extends State<ProductDetails>
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-                width: displayWidth(context)-20,
-                    child: Image(
-                        fit: BoxFit.fill,
-                        image: AssetImage(
-                            "assets/images/googleMapPlaceholder.png")),),
+              width: displayWidth(context) - 20,
+              child: Image(
+                  fit: BoxFit.fill,
+                  image: AssetImage("assets/images/googleMapPlaceholder.png")),
+            ),
           ],
         ),
       ],
     );
   }
+
   final List<Widget> imageSliders = imageUrl
       .map((item) => Container(
             child: Container(
