@@ -1,4 +1,4 @@
-import 'file:///C:/Users/LENOVO/OneDrive/Source/Flutter/fashion_market/lib/views/product_details.dart';
+import 'product_details.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'favorite.dart';
