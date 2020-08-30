@@ -67,6 +67,46 @@ Widget appBarHome(BuildContext context){
   );
 }
 
+Widget appBarConversation(BuildContext context, String username){
+  return AppBar(
+      automaticallyImplyLeading: true,
+      backgroundColor: Colors.white,
+      title: Row(
+        children: <Widget>[
+          Container(
+            //padding: EdgeInsets.all(8),
+            height: 40,
+            width: 40,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(50)
+            ),
+            child: Text(
+              "${username.substring(0,1).toUpperCase()}",
+              style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white
+              ),
+            ),
+          ),
+          SizedBox(width: 8,),
+          Text(
+            username,
+            style: TextStyle(
+              fontFamily: "Signatra",
+              fontSize: 25,
+            ),
+            textAlign: TextAlign.justify,
+          )
+        ],
+      ),
+      iconTheme: IconThemeData(
+        color: Colors.blue, //change your color here
+      ),
+  );
+}
+
 InputDecoration textFieldInputDecoration(String hintText){
   return InputDecoration(
       hintText: "$hintText",

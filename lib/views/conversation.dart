@@ -62,7 +62,7 @@ class _ConversationState extends State<Conversation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarSignIn(context),
+      appBar: appBarConversation(context, widget.chatRoomId.replaceAll('_', '').replaceAll(Constants.username, '')),
       body: Container(
         child: Stack(
           children: <Widget>[
@@ -149,6 +149,7 @@ class MessageTile extends StatelessWidget {
   final String message;
   final bool isSendByMe;
   MessageTile(this.message, this.isSendByMe);
+  double sizeRadius = 20;
 
   @override
   Widget build(BuildContext context) {
@@ -169,15 +170,15 @@ class MessageTile extends StatelessWidget {
             ]
           ),
           borderRadius: isSendByMe ? BorderRadius.only(
-            topLeft: Radius.circular(30),
-            topRight: Radius.circular(30),
-            bottomLeft: Radius.circular(30),
-            bottomRight: Radius.circular(5)
+            topLeft: Radius.circular(sizeRadius),
+            topRight: Radius.circular(sizeRadius),
+            bottomLeft: Radius.circular(sizeRadius),
+            bottomRight: Radius.circular(sizeRadius/3)
           ) : BorderRadius.only(
-              topLeft: Radius.circular(30),
-              topRight: Radius.circular(30),
-              bottomRight: Radius.circular(30),
-              bottomLeft: Radius.circular(5)
+              topLeft: Radius.circular(sizeRadius),
+              topRight: Radius.circular(sizeRadius),
+              bottomRight: Radius.circular(sizeRadius),
+              bottomLeft: Radius.circular(sizeRadius/3)
           )
         ),
         child: Text(

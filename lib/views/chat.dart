@@ -27,11 +27,14 @@ class _ChatState extends State<Chat> {
         return snapshot.hasData ? ListView.builder(
           itemCount: snapshot.data.documents.length,
           itemBuilder: (context, index){
-            return ChatRoomTile(
-                snapshot.data.documents[index].get("chatRoomId")
-                    .toString().replaceAll('_', '')
-                    .replaceAll(Constants.username,''),
-                snapshot.data.documents[index].get("chatRoomId")
+            return Container(
+              margin: EdgeInsets.symmetric(vertical: 5),
+              child: ChatRoomTile(
+                  snapshot.data.documents[index].get("chatRoomId")
+                      .toString().replaceAll('_', '')
+                      .replaceAll(Constants.username,''),
+                  snapshot.data.documents[index].get("chatRoomId")
+              ),
             );
           },
         ) :  Container();
