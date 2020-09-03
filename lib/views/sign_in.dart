@@ -45,7 +45,7 @@ class _SignInState extends State<SignIn> {
 
       authMethods.signInWithEmailAndPassword(email.text.trim(), password.text.trim()).then((value) {
         //print("${value.uid}");
-
+        print(value);
         if(value != null){
 
           HelperFunction.saveUserLoggedInSharedPreference(true);

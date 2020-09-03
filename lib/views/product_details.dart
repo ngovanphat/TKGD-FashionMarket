@@ -75,7 +75,7 @@ class _ProductDetailsState extends State<ProductDetails>
                         items: imageSliders,
                       ),
                     ),
-                    SizedBox(height: 5),
+                    SizedBox(height: 10),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -173,7 +173,7 @@ class _ProductDetailsState extends State<ProductDetails>
                         Container(
                           padding: EdgeInsets.fromLTRB(15, 5, 10, 0),
                           child: Text(
-                            "Uploaded 2 days ago in Hồ Chí Minh",
+                            "Uploaded 2 days ago",
                             style: TextStyle(
                                 fontSize: 18,
                                 color: Colors.black87,

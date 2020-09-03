@@ -9,9 +9,8 @@ class AuthMethods {
 
     try{
       UserCredential result = await auth.signInWithEmailAndPassword(email: email, password: password);
-      FirebaseUser firebaseUser = result.user;
 
-      return firebaseUser!=null ? UserInfomation(userID: firebaseUser.uid) : null;
+      return result.user!=null ? UserInfomation(userID: result.user.uid) : null;
     }catch(e){
       print(e);
     }
