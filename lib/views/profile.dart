@@ -43,23 +43,23 @@ class _ProfileState extends State<Profile> {
               ),
               child: Center(
                 child: Text(Constants.username.substring(0,1).toUpperCase(), style: TextStyle(
-                  fontSize: 110,
-                  fontFamily: "Signatra",
+                  fontSize: 80,
+                  fontFamily: "sans-serif",
                   color: Colors.white,
                 ),),
               ),
             ),
           ),
-          SizedBox(height: 10,),
+          SizedBox(height: 10),
           Container(
             child: Text(Constants.username,
             style: TextStyle(
-              fontSize: 60,
-              fontFamily: "Signatra",
+              fontSize: 50,
+              fontFamily: "sans-serif",
               color: Colors.black
             ),),
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 40),
           GestureDetector(
             onTap: (){
               onClickSignOut();
@@ -75,8 +75,8 @@ class _ProfileState extends State<Profile> {
               child: Text(
                 "Sign Out",
                 style: TextStyle(
-                fontFamily: "Signatra",
-                fontSize: 30,
+                fontFamily: "sans-serif",
+                fontSize: 20,
                 color: Colors.white
               ),
                 textAlign: TextAlign.center,
@@ -92,15 +92,15 @@ class _ProfileState extends State<Profile> {
     return Container(
       child: Column(
         children: <Widget>[
-          SizedBox(height: 10,),
+          SizedBox(height: 10),
           Container(
             child: Text("List item",
             style: TextStyle(
-              fontSize: 30,
-              fontFamily: "Signatra",
+              fontSize: 20,
+              fontFamily: "sans-serif",
             ),)
           ),
-          SizedBox(height: 10,),
+          SizedBox(height: 10),
           SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(
@@ -145,7 +145,7 @@ class _ProfileState extends State<Profile> {
                                           children: <Widget>[
                                             Text(
                                               "Nike Air Max 97",
-                                              style: TextStyle(fontSize: 23,fontFamily: "Signatra"),
+                                              style: TextStyle(fontSize: 15,fontFamily: "sans-serif"),
                                             ),
                                             Padding(
                                               padding:
@@ -153,7 +153,7 @@ class _ProfileState extends State<Profile> {
                                               child: Text(
                                                 "\$100",
                                                 style: TextStyle(
-                                                    fontSize: 23,
+                                                    fontSize: 16,
                                                     fontWeight: FontWeight.bold),
                                               ),
                                             ),
@@ -173,7 +173,7 @@ class _ProfileState extends State<Profile> {
                                                     child: Text(
                                                       "Ho Chi Minh City",
                                                       style: TextStyle(
-                                                          fontSize: 16,
+                                                          fontSize: 11,
                                                           color: Colors.black38),
                                                     ),
                                                   )
@@ -212,14 +212,14 @@ class _ProfileState extends State<Profile> {
                                         children: <Widget>[
                                           Text(
                                             "Givenchy Distressed",
-                                            style: TextStyle(fontSize: 23,fontFamily: "Signatra"),
+                                            style: TextStyle(fontSize: 15,fontFamily: "sans-serif"),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.only(top: 8.0),
                                             child: Text(
                                               "\$450",
                                               style: TextStyle(
-                                                  fontSize: 23,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                           ),
@@ -237,7 +237,7 @@ class _ProfileState extends State<Profile> {
                                                   child: Text(
                                                     "Ho Chi Minh City",
                                                     style: TextStyle(
-                                                        fontSize: 16,
+                                                        fontSize: 11,
                                                         color: Colors.black38),
                                                   ),
                                                 )
@@ -276,14 +276,14 @@ class _ProfileState extends State<Profile> {
                                         children: <Widget>[
                                           Text(
                                             "Saint Laurent",
-                                            style: TextStyle(fontSize: 23,fontFamily: "Signatra"),
+                                            style: TextStyle(fontSize: 15,fontFamily: "sans-serif"),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.only(top: 8.0),
                                             child: Text(
                                               "\$700",
                                               style: TextStyle(
-                                                  fontSize: 23,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                           ),
@@ -301,7 +301,7 @@ class _ProfileState extends State<Profile> {
                                                   child: Text(
                                                     "Ho Chi Minh City",
                                                     style: TextStyle(
-                                                        fontSize: 16,
+                                                        fontSize: 11,
                                                         color: Colors.black38),
                                                   ),
                                                 )
@@ -340,14 +340,14 @@ class _ProfileState extends State<Profile> {
                                         children: <Widget>[
                                           Text(
                                             "Gucci Slides",
-                                            style: TextStyle(fontSize: 23,fontFamily: "Signatra"),
+                                            style: TextStyle(fontSize: 15,fontFamily: "sans-serif"),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.only(top: 8.0),
                                             child: Text(
                                               "\$450",
                                               style: TextStyle(
-                                                  fontSize: 23,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.bold),
                                             ),
                                           ),
@@ -365,7 +365,7 @@ class _ProfileState extends State<Profile> {
                                                   child: Text(
                                                     "Ho Chi Minh City",
                                                     style: TextStyle(
-                                                        fontSize: 16,
+                                                        fontSize: 11,
                                                         color: Colors.black38),
                                                   ),
                                                 )

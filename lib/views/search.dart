@@ -61,8 +61,8 @@ class _SearchScreenState extends State<SearchScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text("$username", style: TextStyle(
-                    fontFamily: "Signatra",
-                    fontSize: 25
+                    fontFamily: "sans-serif",
+                    fontSize: 20
                 ),
                   textAlign: TextAlign.start,
                 ),
@@ -83,7 +83,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: Text("Message", style: TextStyle(
-                  fontSize: 16
+                  fontSize: 11
               )),
             ),
           )
@@ -125,7 +125,7 @@ class _SearchScreenState extends State<SearchScreen> {
                        child: TextField(
                          style: TextStyle(
                            color: Colors.white,
-                           fontSize: 20
+                           fontSize: 15
                          ),
                           controller: keyword,
                           decoration: InputDecoration(

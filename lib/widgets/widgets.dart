@@ -85,7 +85,7 @@ Widget appBarConversation(BuildContext context, String username){
             child: Text(
               "${username.substring(0,1).toUpperCase()}",
               style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 17,
                   color: Colors.white
               ),
             ),
@@ -94,8 +94,8 @@ Widget appBarConversation(BuildContext context, String username){
           Text(
             username,
             style: TextStyle(
-              fontFamily: "Signatra",
-              fontSize: 25,
+              fontFamily: "sans-serif",
+              fontSize: 20,
             ),
             textAlign: TextAlign.justify,
           )
@@ -111,8 +111,8 @@ InputDecoration textFieldInputDecoration(String hintText){
   return InputDecoration(
       hintText: "$hintText",
       hintStyle: TextStyle(
-          fontSize: 20,
-          fontFamily: "Signatra"
+          fontSize: 15,
+          fontFamily: "sans-serif"
       ),
       focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.black)
@@ -126,7 +126,7 @@ InputDecoration textFieldInputDecoration(String hintText){
 TextStyle simpleTextFieldStyle(){
   return TextStyle(
     color: Colors.black,
-    fontSize: 16
+    fontSize: 11
   );
 }
 
@@ -136,7 +136,7 @@ TextStyle simpleTextFieldStyle(){
 TextStyle mediumTextStyle(){
   return TextStyle(
       color: Colors.black,
-      fontSize: 20,
-      fontFamily: "Signatra"
+      fontSize: 15,
+      fontFamily: "sans-serif"
   );
 }

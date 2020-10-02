@@ -33,7 +33,7 @@ class _PostItemState extends State<PostItem> {
           ),
           title: Text(
             "New Post",
-            style: TextStyle(fontFamily: "Signatra", fontSize: 26),
+            style: TextStyle(fontFamily: "sans-serif", fontSize: 21),
           ),
           centerTitle: true,
           actions: <Widget>[
@@ -46,7 +46,7 @@ class _PostItemState extends State<PostItem> {
                 child: Text(
                   "Share",
                   style: TextStyle(
-                      fontFamily: "Signatra", fontSize: 26, color: Colors.blue),
+                      fontFamily: "sans-serif", fontSize: 21, color: Colors.blue),
                 ),
               ),
             )
@@ -96,7 +96,7 @@ class _PostItemState extends State<PostItem> {
                     children: <Widget>[
                       Text(
                         'Brand name',
-                        style: TextStyle(fontSize: 24, fontFamily: "Signatra"),
+                        style: TextStyle(fontSize: 19, fontFamily: "sans-serif"),
                       ),
                       Container(
                           width: MediaQuery.of(context).size.width * 2 / 3,
@@ -112,7 +112,7 @@ class _PostItemState extends State<PostItem> {
                     children: <Widget>[
                       Text(
                         'Address',
-                        style: TextStyle(fontSize: 24, fontFamily: "Signatra"),
+                        style: TextStyle(fontSize: 19, fontFamily: "sans-serif"),
                       ),
                       Container(
                           width: MediaQuery.of(context).size.width * 2 / 3,
@@ -128,7 +128,7 @@ class _PostItemState extends State<PostItem> {
                     children: <Widget>[
                       Text(
                         'Price',
-                        style: TextStyle(fontSize: 24, fontFamily: "Signatra"),
+                        style: TextStyle(fontSize: 19, fontFamily: "sans-serif"),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width / 2,
@@ -152,8 +152,8 @@ class _PostItemState extends State<PostItem> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Codition',
-                        style: TextStyle(fontSize: 24, fontFamily: "Signatra"),
+                        'Condition',
+                        style: TextStyle(fontSize: 19, fontFamily: "sans-serif"),
                       ),
                       Container(
                           alignment: Alignment.topLeft,
@@ -165,7 +165,7 @@ class _PostItemState extends State<PostItem> {
                                 title: Text(
                                   'New',
                                   style: TextStyle(
-                                      fontSize: 20, fontFamily: "Signatra"),
+                                      fontSize: 15, fontFamily: "sans-serif"),
                                 ),
                                 leading: Radio(
                                   value: 1,
@@ -181,7 +181,7 @@ class _PostItemState extends State<PostItem> {
                                 title: Text(
                                   'Used',
                                   style: TextStyle(
-                                      fontSize: 20, fontFamily: "Signatra"),
+                                      fontSize: 15, fontFamily: "sans-serif"),
                                 ),
                                 leading: Radio(
                                   value: 2,
@@ -206,7 +206,7 @@ class _PostItemState extends State<PostItem> {
                     children: <Widget>[
                       Text(
                         'Category',
-                        style: TextStyle(fontSize: 24, fontFamily: "Signatra"),
+                        style: TextStyle(fontSize: 19, fontFamily: "sans-serif"),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width * 2 / 3,
@@ -247,7 +247,7 @@ class _PostItemState extends State<PostItem> {
                     children: <Widget>[
                       Text(
                         'Size',
-                        style: TextStyle(fontSize: 24, fontFamily: "Signatra"),
+                        style: TextStyle(fontSize: 19, fontFamily: "sans-serif"),
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width / 2,
@@ -267,7 +267,7 @@ class _PostItemState extends State<PostItem> {
                     children: <Widget>[
                       Text(
                         'Type of post',
-                        style: TextStyle(fontSize: 24, fontFamily: "Signatra"),
+                        style: TextStyle(fontSize: 19, fontFamily: "sans-serif"),
                       ),
                       Container(
                           alignment: Alignment.topLeft,
@@ -279,7 +279,7 @@ class _PostItemState extends State<PostItem> {
                                 title: Text(
                                   'Want to buy',
                                   style: TextStyle(
-                                      fontSize: 20, fontFamily: "Signatra"),
+                                      fontSize: 15, fontFamily: "sans-serif"),
                                 ),
                                 leading: Radio(
                                   value: 1,
@@ -295,7 +295,7 @@ class _PostItemState extends State<PostItem> {
                                 title: Text(
                                   'Want to sell',
                                   style: TextStyle(
-                                      fontSize: 20, fontFamily: "Signatra"),
+                                      fontSize: 15, fontFamily: "sans-serif"),
                                 ),
                                 leading: Radio(
                                   value: 2,

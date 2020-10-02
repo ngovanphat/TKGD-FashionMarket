@@ -98,7 +98,7 @@ class ChatRoomTile extends StatelessWidget {
               child: Text(
                 "${username.substring(0,1).toUpperCase()}",
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 17,
                   color: Colors.white
                 ),
               ),
@@ -107,8 +107,8 @@ class ChatRoomTile extends StatelessWidget {
             Text(
               username,
               style: TextStyle(
-                fontFamily: "Signatra",
-                fontSize: 25,
+                fontFamily: "sans-serif",
+                fontSize: 20,
               ),
               textAlign: TextAlign.justify,
             )

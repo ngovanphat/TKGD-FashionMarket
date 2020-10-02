@@ -99,22 +99,22 @@ class _AddItemState extends State<AddItem> {
                       Text(
                         'Library',
                         style: TextStyle(
-                            fontFamily: "Signatra",
-                            fontSize: 20,
+                            fontFamily: "sans-serif",
+                            fontSize: 15,
                             color: Colors.blue),
                       ),
                       Text(
                         'Photo',
                         style: TextStyle(
-                          fontFamily: "Signatra",
-                          fontSize: 20,
+                          fontFamily: "sans-serif",
+                          fontSize: 15,
                         ),
                       ),
                       Text(
                         'Video',
                         style: TextStyle(
-                          fontFamily: "Signatra",
-                          fontSize: 20,
+                          fontFamily: "sans-serif",
+                          fontSize: 15,
                         ),
                       )
                     ],
@@ -158,7 +158,7 @@ class _AddItemState extends State<AddItem> {
                 child: Text(
                   'Show more',
                   style: TextStyle(
-                      fontFamily: "Signatra", fontSize: 20, color: Colors.blue),
+                      fontFamily: "sans-serif", fontSize: 15, color: Colors.blue),
                 ),
               )
             ],
